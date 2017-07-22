@@ -1,0 +1,13 @@
+language: python
+python:
+  - 3.5
+
+services:
+  - docker
+
+install:
+  - docker build -t hugo:0.25.1 .
+  - docker tag hugo:0.25.1 hugo:latest
+
+script:
+  - docker images
