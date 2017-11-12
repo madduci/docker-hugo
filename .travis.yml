@@ -6,8 +6,7 @@ services:
   - docker
 
 install:
-  - docker build -t hugo:0.25.1 .
-  - docker tag hugo:0.25.1 hugo:latest
+  - docker build -t madduci/docker-hugo:latest .
 
 script:
   - docker images
