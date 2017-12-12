@@ -7,7 +7,7 @@ EXPOSE 1313
 
 WORKDIR /site
 
-ENV HUGO_VERSION 0.30.2
+ENV HUGO_VERSION 0.31.1
 ENV HUGO_BINARY hugo_${HUGO_VERSION}_Linux-64bit.deb
 
 # Install pygments (for syntax highlighting)
