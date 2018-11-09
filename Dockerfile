@@ -1,5 +1,6 @@
 FROM debian:stable-slim
-LABEL maintainer="info@micheleadduci.net"
+
+LABEL maintainer="Michele Adduci <info@micheleadduci.net>"
 
 VOLUME /site
 
@@ -7,7 +8,7 @@ EXPOSE 1313
 
 WORKDIR /site
 
-ENV HUGO_VERSION 0.49.2
+ENV HUGO_VERSION 0.51
 ENV HUGO_BINARY hugo_${HUGO_VERSION}_Linux-64bit.deb
 
 # Install pygments (for syntax highlighting)
