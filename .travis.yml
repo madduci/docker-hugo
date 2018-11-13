@@ -9,4 +9,4 @@ install:
   - docker build -t madduci/docker-hugo:latest .
 
 script:
-  - docker images
+  - docker run --rm -it madduci/docker-hugo:latest version
