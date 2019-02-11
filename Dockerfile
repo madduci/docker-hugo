@@ -8,7 +8,7 @@ WORKDIR /site
 
 EXPOSE 1313
 
-ENV HUGO_VERSION 0.51 
+ENV HUGO_VERSION 0.54.0
 ENV HUGO_BINARY hugo_${HUGO_VERSION}_Linux-64bit
 
 RUN apk update \
@@ -16,7 +16,7 @@ RUN apk update \
       curl \
       ca-certificates \
       py-pygments \
-    && curl -L "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_BINARY}.tar.gz" > /tmp/hugo.tar.gz \    
+    && curl -L "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_BINARY}.tar.gz" > /tmp/hugo.tar.gz \
     && mkdir /usr/local/hugo \
     && tar xzf /tmp/hugo.tar.gz -C /usr/local/hugo/ \
     && ln -s /usr/local/hugo/hugo /usr/local/bin/hugo \
