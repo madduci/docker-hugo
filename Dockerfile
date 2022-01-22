@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-LABEL maintainer="Michele Adduci <adduci.michele@gmail.com>"
+LABEL maintainer="Michele Adduci <adduci@tutanota.com>"
 
 VOLUME ["/site"]
 
@@ -8,7 +8,7 @@ WORKDIR /site
 
 EXPOSE 1313
 
-ENV HUGO_VERSION 0.88.1
+ENV HUGO_VERSION 0.92.0
 ENV HUGO_BINARY hugo_${HUGO_VERSION}_Linux-64bit
 
 RUN apk update \
