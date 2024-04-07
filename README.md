@@ -1,6 +1,6 @@
 # docker-hugo
 
-[![Build and Publish](https://github.com/madduci/docker-hugo/actions/workflows/build.yaml/badge.svg)](https://github.com/madduci/docker-hugo/actions/workflows/build.yaml)
+[![Build and Publish](https://github.com/madduci/docker-hugo/actions/workflows/build.yml/badge.svg)](https://github.com/madduci/docker-hugo/actions/workflows/build.yml)
 
 Hugo Docker container, powered by Alpine Linux and Hugo latest release available at [GitHub repository](https://github.com/gohugoio/hugo/releases).
 
