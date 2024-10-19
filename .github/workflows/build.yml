@@ -38,7 +38,7 @@ jobs:
           # Note: tags has to be all lower-case
           tags: |
             madduci/docker-hugo:latest
-            madduci/docker-hugo:0.136.0
+            madduci/docker-hugo:0.136.2
           # build on feature branches, push only on master branch
           push: ${{ github.ref == 'refs/heads/master' }}
 
