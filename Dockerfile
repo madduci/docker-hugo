@@ -8,13 +8,14 @@ WORKDIR /site
 
 EXPOSE 1313
 
-ENV HUGO_VERSION 0.148.2
+ENV HUGO_VERSION=0.148.2
 
 RUN apk update \
     && apk --update add \
       curl \
       ca-certificates \
       py-pygments \
+      tzdata \
     && curl -L "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_linux-amd64.tar.gz" > /tmp/hugo.tar.gz \
     && mkdir /usr/local/hugo \
     && tar xzf /tmp/hugo.tar.gz -C /usr/local/hugo/ \
