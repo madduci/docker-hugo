@@ -8,7 +8,7 @@ WORKDIR /site
 
 EXPOSE 1313
 
-ENV HUGO_VERSION=0.154.5
+ENV HUGO_VERSION=0.155.3
 
 RUN apk update \
     && apk --update add \
